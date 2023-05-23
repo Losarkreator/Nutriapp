@@ -1,0 +1,16 @@
+{
+    "ingredients": [
+        {
+            "id": 0,
+            "name": "Acelgas"
+        },
+        {
+            "id": 1,
+            "name": "Brócoli"
+        },
+        {
+            "id": 2,
+            "name": "Zanahoria"
+        }
+    ]
+}

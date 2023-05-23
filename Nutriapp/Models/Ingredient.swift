@@ -4,8 +4,8 @@
 
 import Foundation
 
-struct Ingredient {
-    var id: Int
-    var name: String
+struct Ingredient: Decodable, Identifiable {
+    let id: Int
+    let name: String
 //    var calorias: Int
 }

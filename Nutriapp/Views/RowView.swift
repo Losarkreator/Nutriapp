@@ -9,13 +9,16 @@ struct RowView: View {
     var ingredient: Ingredient
     
     var body: some View {
-        Text(ingredient.name)
-            .font(.title)
+        HStack {
+            Text(String(ingredient.id))
+            Text(ingredient.name)
+                .font(.title)
+        }
     }
 }
 
 struct RowView_Previews: PreviewProvider {
     static var previews: some View {
-        RowView(ingredient: Ingredient(id: 1, name: "Acelgas"))
+        RowView(ingredient: Ingredient(id: 0, name: "Acelgas"))
     }
 }
