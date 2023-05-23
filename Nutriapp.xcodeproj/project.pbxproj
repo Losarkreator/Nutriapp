@@ -12,6 +12,8 @@
 		87B8571F2A1CCE1C00DDDFF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B8571E2A1CCE1C00DDDFF2 /* Assets.xcassets */; };
 		87B857222A1CCE1C00DDDFF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B857212A1CCE1C00DDDFF2 /* Preview Assets.xcassets */; };
 		87B8572A2A1CD11600DDDFF2 /* Programmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B857292A1CD11600DDDFF2 /* Programmer.swift */; };
+		87B8572D2A1CD4F000DDDFF2 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8572C2A1CD4F000DDDFF2 /* RowView.swift */; };
+		87B8572F2A1CD75000DDDFF2 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8572E2A1CD75000DDDFF2 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		87B8571E2A1CCE1C00DDDFF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87B857212A1CCE1C00DDDFF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		87B857292A1CD11600DDDFF2 /* Programmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programmer.swift; sourceTree = "<group>"; };
+		87B8572C2A1CD4F000DDDFF2 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		87B8572E2A1CD75000DDDFF2 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,7 @@
 			children = (
 				87B857282A1CD10A00DDDFF2 /* Data */,
 				87B8571A2A1CCE1B00DDDFF2 /* NutriappApp.swift */,
-				87B8571C2A1CCE1B00DDDFF2 /* ContentView.swift */,
+				87B8572B2A1CD4D600DDDFF2 /* Views */,
 				87B8571E2A1CCE1C00DDDFF2 /* Assets.xcassets */,
 				87B857202A1CCE1C00DDDFF2 /* Preview Content */,
 			);
@@ -76,6 +80,16 @@
 				87B857292A1CD11600DDDFF2 /* Programmer.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		87B8572B2A1CD4D600DDDFF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87B8571C2A1CCE1B00DDDFF2 /* ContentView.swift */,
+				87B8572C2A1CD4F000DDDFF2 /* RowView.swift */,
+				87B8572E2A1CD75000DDDFF2 /* ListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +164,9 @@
 			files = (
 				87B8571D2A1CCE1B00DDDFF2 /* ContentView.swift in Sources */,
 				87B8572A2A1CD11600DDDFF2 /* Programmer.swift in Sources */,
+				87B8572F2A1CD75000DDDFF2 /* ListView.swift in Sources */,
 				87B8571B2A1CCE1B00DDDFF2 /* NutriappApp.swift in Sources */,
+				87B8572D2A1CD4F000DDDFF2 /* RowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
