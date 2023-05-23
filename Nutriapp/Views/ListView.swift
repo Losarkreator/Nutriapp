@@ -5,40 +5,42 @@
 import SwiftUI
 
 struct ListView: View {
-    var body: some View {
-        Text("Prueba")
-            .padding()
-            .onAppear(perform: readFile)
-        //        List(ingredients, id: \.id) { ingredient in
-        //            RowView(ingredient: ingredient)
-        //        }
-        
-    }
+    @ObservedObject var model = ViewModel()
     
-    private func readFile() {
-        if let url = Bundle.main.url(forResource: "ingredients", withExtension: "json"),
-           let data = try? Data(contentsOf: url) {
-            let decoder = JSONDecoder()
-            if let jsonData = try? decoder.decode(JSONData.self, from: data) {
-                print(jsonData.ingredients)
+    var body: some View {
+        List(model.ingredientList) { item in
+            HStack {
+                Text(String(item.id))
+                Text(item.name)
             }
-        } else {
-            print("Json no encontrado")
         }
     }
     
+    init() {
+        model.getData()
+    }
+    
 }
 
-struct JSONData: Decodable {
-    let ingredients: [Ingredient]
-}
 
+/*
+ private func readFile() {
+ if let url = Bundle.main.url(forResource: "ingredients", withExtension: "json"),
+ let data = try? Data(contentsOf: url) {
+ let decoder = JSONDecoder()
+ if let jsonData = try? decoder.decode(JSONData.self, from: data) {
+ print(jsonData.ingredients)
+ }
+ } else {
+ print("Json no encontrado")
+ }
+ }
+ }
+ struct JSONData: Decodable {
+ let ingredients: [Ingredient]
+ }
+ */
 
-//private let ingredients = [
-//    Ingredient(id: 1, name: "Alcachofa"),
-//    Ingredient(id: 2, name: "Brócoli"),
-//    Ingredient(id: 3, name: "Zanahoria")
-//]
 
 
 struct ListView_Previews: PreviewProvider {

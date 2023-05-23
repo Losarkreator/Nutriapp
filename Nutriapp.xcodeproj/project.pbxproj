@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8779B2032A1D09500080A4FC /* ingredients.json in Resources */ = {isa = PBXBuildFile; fileRef = 8779B2022A1D093B0080A4FC /* ingredients.json */; };
+		8779B2062A1D0B900080A4FC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779B2052A1D0B900080A4FC /* ViewModel.swift */; };
 		87B8571B2A1CCE1B00DDDFF2 /* NutriappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8571A2A1CCE1B00DDDFF2 /* NutriappApp.swift */; };
 		87B8571D2A1CCE1B00DDDFF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8571C2A1CCE1B00DDDFF2 /* ContentView.swift */; };
 		87B8571F2A1CCE1C00DDDFF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B8571E2A1CCE1C00DDDFF2 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		8779B2022A1D093B0080A4FC /* ingredients.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ingredients.json; sourceTree = "<group>"; };
+		8779B2052A1D0B900080A4FC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		87B857172A1CCE1B00DDDFF2 /* Nutriapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nutriapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B8571A2A1CCE1B00DDDFF2 /* NutriappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriappApp.swift; sourceTree = "<group>"; };
 		87B8571C2A1CCE1B00DDDFF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8779B2042A1D0B740080A4FC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8779B2052A1D0B900080A4FC /* ViewModel.swift */,
+			);
+			name = ViewModels;
+			path = Views;
+			sourceTree = "<group>";
+		};
 		87B8570E2A1CCE1B00DDDFF2 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +74,7 @@
 			children = (
 				87B8571A2A1CCE1B00DDDFF2 /* NutriappApp.swift */,
 				87B857282A1CD10A00DDDFF2 /* Models */,
+				8779B2042A1D0B740080A4FC /* ViewModels */,
 				87B8572B2A1CD4D600DDDFF2 /* Views */,
 				87B8571E2A1CCE1C00DDDFF2 /* Assets.xcassets */,
 				87B857202A1CCE1C00DDDFF2 /* Preview Content */,
@@ -175,6 +187,7 @@
 				87B8572F2A1CD75000DDDFF2 /* ListView.swift in Sources */,
 				87B8571B2A1CCE1B00DDDFF2 /* NutriappApp.swift in Sources */,
 				87B8572D2A1CD4F000DDDFF2 /* RowView.swift in Sources */,
+				8779B2062A1D0B900080A4FC /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
