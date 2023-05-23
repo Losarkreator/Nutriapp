@@ -5,25 +5,17 @@
 import SwiftUI
 
 struct RowView: View {
-    var programmer: Programmer
+//    var programmer: Programmer
+    var ingredient: Ingredient
     
     var body: some View {
-        HStack(){
-            programmer.avatar
-                .resizable()
-                .frame(width: 40, height: 40)
-            VStack(alignment: .leading) {
-                Text(programmer.name)
-                    .font(.title)
-                Text(programmer.languages)
-            }
-            Spacer()
-        }
+        Text(ingredient.name)
+            .font(.title)
     }
 }
 
 struct RowView_Previews: PreviewProvider {
     static var previews: some View {
-        RowView(programmer: Programmer(id: 1, name: "Carlos", languages: "Swift, C#", avatar: Image(systemName: "person.fill")))
+        RowView(ingredient: Ingredient(id: 1, name: "Acelgas"))
     }
 }

@@ -7,17 +7,16 @@
 
 import SwiftUI
 
-private let programmers = [
-    Programmer(id: 1, name: "Carlos", languages: "Swift, C#", avatar: Image(systemName: "person.fill")),
-    Programmer(id: 2, name: "Yo", languages: "Swift", avatar: Image(systemName: "person.fill")),
-    Programmer(id: 3, name: "Tu", languages: "Kotlin", avatar: Image(systemName: "person.fill")),
-    Programmer(id: 4, name: "El", languages: "Alcachofa", avatar: Image(systemName: "person.fill"))
+private let ingredients = [
+    Ingredient(id: 1, name: "Alcachofa"),
+    Ingredient(id: 2, name: "Brócoli"),
+    Ingredient(id: 3, name: "Zanahoria")
 ]
 
 struct ListView: View {
     var body: some View {
-        List(programmers, id: \.id) { programmer in
-            RowView(programmer: programmer)
+        List(ingredients, id: \.id) { ingredient in
+            RowView(ingredient: ingredient)
         }
     }
 }
