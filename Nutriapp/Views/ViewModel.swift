@@ -6,8 +6,7 @@
 import Foundation
 
 class ViewModel: ObservableObject {
-    @Published var ingredientList = [Ingredient]()
-    
+    @Published var ingredientList = [IngredientModel]()
     
     func getData() {
         if let url = Bundle.main.url(forResource: "ingredients", withExtension: "json"),
@@ -21,6 +20,4 @@ class ViewModel: ObservableObject {
             print("Json no encontrado")
         }
     }
-    
-    
 }

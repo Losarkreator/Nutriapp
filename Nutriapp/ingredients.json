@@ -2,15 +2,23 @@
     "ingredients": [
         {
             "id": 0,
-            "name": "Acelgas"
+            "name": "Acelgas",
+            "calorias": 25
         },
         {
             "id": 1,
-            "name": "Brócoli"
+            "name": "Brócoli",
+            "calorias": 25
         },
         {
             "id": 2,
-            "name": "Zanahoria"
+            "name": "Zanahoria",
+            "calorias": 25
+        },
+        {
+            "id": 3,
+            "name": "Espárragos trigeros",
+            "calorias": 22
         }
     ]
 }

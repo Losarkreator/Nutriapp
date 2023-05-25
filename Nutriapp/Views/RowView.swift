@@ -5,20 +5,22 @@
 import SwiftUI
 
 struct RowView: View {
-//    var programmer: Programmer
-    var ingredient: Ingredient
+    var ingredient: IngredientModel
     
     var body: some View {
         HStack {
-            Text(String(ingredient.id))
             Text(ingredient.name)
                 .font(.title)
+                .foregroundColor(Color.white)
         }
+        .padding(.horizontal, 24.0)
+        .padding(.vertical, 12.0)
+        .background(Capsule().fill(Color.gray))
     }
 }
 
 struct RowView_Previews: PreviewProvider {
     static var previews: some View {
-        RowView(ingredient: Ingredient(id: 0, name: "Acelgas"))
+        RowView(ingredient: IngredientModel(id: 1, name: "Acelgas", calorias: 12))
     }
 }
